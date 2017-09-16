@@ -1,0 +1,48 @@
+Opponent TsinghuAeolus is strong
+              Types:         0         1         2         3         4         5         6
+    player_speed_max       1.2       1.2       1.2       1.2       1.2       1.2       1.2
+     stamina_inc_max        45     33.44      27.1     36.28      30.2        25     31.44
+        player_decay       0.4    0.4618    0.4426    0.5314    0.4474     0.565    0.4326
+      inertia_moment         5     6.545     6.065     8.285     6.185     9.125     5.815
+     dash_power_rate     0.006  0.007156   0.00779  0.006872   0.00748     0.008  0.007356
+         player_size       0.3       0.3       0.3       0.3       0.3       0.3       0.3
+     kickable_margin       0.7      0.76    0.8428    0.7516    0.7728    0.8604    0.8482
+           kick_rand         0      0.03    0.0714    0.0258    0.0364    0.0802    0.0741
+       extra_stamina         0      50.6      86.9       0.9      39.3      47.8      38.3
+          effort_max         1    0.8988    0.8262    0.9982    0.9214    0.9044    0.9234
+          effort_min       0.6    0.4988    0.4262    0.5982    0.5214    0.5044    0.5234
+
+                 li:        75   66.9734   76.8263   45.6953   66.0149   47.1473   68.7995
+        accel value:         1         5         5         7         8        11         5
+         size value:         1         5         4         7         7        11         7
+      stamina value:         7         7         1        11         6         5         5
+stamina_inc_max/li value:       0.6  0.499303  0.352744  0.793955  0.457473  0.530253   0.45698
+
+At cycle 0 we have bad, so try save stamina
+
+At cycle 1 we have bad, so try save stamina
+
+At cycle 2 we have bad, so try save stamina
+
+At cycle 3 we have bad, so try save stamina
+>> (change_player_type 2 5)
+
+>> (change_player_type 3 1)
+
+>> (change_player_type 4 1)
+
+>> (change_player_type 5 1)
+
+>> (change_player_type 6 4)
+
+>> (change_player_type 7 4)
+
+>> (change_player_type 8 4)
+
+>> (change_player_type 9 3)
+
+>> (change_player_type 10 3)
+
+>> (change_player_type 11 3)
+
+Midfielder very quick tired

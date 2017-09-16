@@ -1,0 +1,23 @@
+#!/bin/sh
+
+
+ZIP_EXT=".zip"
+PREFIX=`date +%e%m%y | tr -d ' '`
+#PREFIX=`date +%d%b%H%M | tr -d ' '`
+ARCHIVE_NAME="robocup"
+ZIP_PATERN="*.[Ch] *.conf logs *.data weights/passweights/* weights/shootweights/*"
+
+if [ $# == 1 ]; 
+then
+   ARCHIVE_PATH=$1 
+else
+   ARCHIVE_PATH="./archive/"
+fi
+
+zip $ARCHIVE_NAME$PREFIX  $ZIP_PATERN 
+
+cp ./$ARCHIVE_NAME$PREFIX$ZIP_EXT $ARCHIVE_PATH$ARCHIVE_NAME$PREFIX$ZIP_EXT
+
+rm ./$ARCHIVE_NAME$PREFIX$ZIP_EXT
+
+

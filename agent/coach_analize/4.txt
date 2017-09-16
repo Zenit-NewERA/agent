@@ -1,0 +1,47 @@
+Opponent TsinghuAeolus is strong
+              Types:         0         1         2         3         4         5         6
+    player_speed_max       1.2       1.2       1.2       1.2       1.2       1.2       1.2
+     stamina_inc_max        45     32.52     32.42     32.44        44     36.66      27.9
+        player_decay       0.4    0.4858    0.4808    0.5412    0.4612    0.4106    0.4006
+      inertia_moment         5     7.145      7.02      8.53      6.53     5.265     5.015
+     dash_power_rate     0.006  0.007248  0.007258  0.007256    0.0061  0.006834   0.00771
+         player_size       0.3       0.3       0.3       0.3       0.3       0.3       0.3
+     kickable_margin       0.7    0.8314    0.7898     0.777    0.7664    0.7536    0.8254
+           kick_rand         0    0.0657    0.0449    0.0385    0.0332    0.0268    0.0627
+       extra_stamina         0      62.2       5.6      52.2      14.3      47.8      21.1
+          effort_max         1    0.8756    0.9888    0.8956    0.9714    0.9044    0.9578
+          effort_min       0.6    0.4756    0.5888    0.4956    0.5714    0.5044    0.5578
+
+                 li:        75   64.7076   54.3941   52.2814   65.1141   77.7742   69.5022
+        accel value:         1         7        10        10         4         2         8
+         size value:         1        10         9         9         5         1         7
+      stamina value:         7         7         6         8         8         4         2
+stamina_inc_max/li value:       0.6  0.502569   0.59602  0.620488  0.675737  0.471365  0.401426
+
+At cycle 0 we have bad, so try save stamina
+
+At cycle 1 we have bad, so try save stamina
+
+At cycle 2 we have bad, so try save stamina
+
+At cycle 3 we have bad, so try save stamina
+>> (change_player_type 2 2)
+
+>> (change_player_type 3 4)
+
+>> (change_player_type 4 4)
+
+>> (change_player_type 5 4)
+
+>> (change_player_type 6 1)
+
+>> (change_player_type 7 1)
+
+>> (change_player_type 8 1)
+
+>> (change_player_type 9 3)
+
+>> (change_player_type 10 3)
+
+>> (change_player_type 11 3)
+All not vary good. Forwards tired not vary fast but... Midfielder tired fast

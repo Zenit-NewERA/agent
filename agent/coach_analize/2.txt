@@ -1,0 +1,48 @@
+Opponent TsinghuAeolus is strong
+              Types:         0         1         2         3         4         5         6
+    player_speed_max       1.2       1.2       1.2       1.2       1.2       1.2       1.2
+     stamina_inc_max        45      44.3     44.54     40.72        30     27.62     30.94
+        player_decay       0.4     0.522    0.4726    0.4002    0.4796    0.5256    0.5456
+      inertia_moment         5      8.05     6.815     5.005      6.99      8.14      8.64
+     dash_power_rate     0.006   0.00607  0.006046  0.006428    0.0075  0.007738  0.007406
+         player_size       0.3       0.3       0.3       0.3       0.3       0.3       0.3
+     kickable_margin       0.7    0.7038    0.8314    0.8414    0.7528     0.806    0.8524
+           kick_rand         0    0.0019    0.0657    0.0707    0.0264     0.053    0.0762
+       extra_stamina         0        60      62.1      37.3      52.6      26.5      18.9
+          effort_max         1      0.88    0.8758    0.9254    0.8948     0.947    0.9622
+          effort_min       0.6      0.48    0.4758    0.5254    0.4948     0.547    0.5622
+
+                 li:        75   63.0836   74.9821   80.2792   63.0532   50.0668   45.5792
+        accel value:         1         5         3         3         9        11        10
+         size value:         1         4         6         5         6         8        12
+      stamina value:         7         7         7         3         5         5         8
+stamina_inc_max/li value:       0.6  0.702243  0.594008   0.50723  0.475789  0.551663  0.678818
+
+At cycle 0 we have bad, so try save stamina
+
+At cycle 1 we have bad, so try save stamina
+
+At cycle 2 we have bad, so try save stamina
+
+At cycle 3 we have bad, so try save stamina
+>> (change_player_type 2 5)
+
+>> (change_player_type 3 1)
+
+>> (change_player_type 4 1)
+
+>> (change_player_type 5 1)
+
+>> (change_player_type 6 2)
+
+>> (change_player_type 7 2)
+
+>> (change_player_type 8 2)
+
+>> (change_player_type 9 6)
+
+>> (change_player_type 10 6)
+
+>> (change_player_type 11 6)
+
+Forwards very good!!!

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+start.sh 4 $1 g
+
+
+

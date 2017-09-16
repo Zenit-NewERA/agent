@@ -1,0 +1,48 @@
+Opponent TsinghuAeolus is strong
+              Types:         0         1         2         3         4         5         6
+    player_speed_max       1.2       1.2       1.2       1.2       1.2       1.2       1.2
+     stamina_inc_max        45     36.52     27.04     29.28     40.92     29.44     40.76
+        player_decay       0.4    0.4364    0.4778    0.4376    0.4654      0.44    0.4496
+      inertia_moment         5      5.91     6.945      5.94     6.635         6      6.24
+     dash_power_rate     0.006  0.006848  0.007796  0.007572  0.006408  0.007556  0.006424
+         player_size       0.3       0.3       0.3       0.3       0.3       0.3       0.3
+     kickable_margin       0.7    0.8992    0.7636    0.8406    0.7554    0.8464    0.7638
+           kick_rand         0    0.0996    0.0318    0.0703    0.0277    0.0732    0.0319
+       extra_stamina         0      21.9      87.9        63      70.6      63.3      45.9
+          effort_max         1    0.9562    0.8242     0.874    0.8588    0.8734    0.9082
+          effort_min       0.6    0.5562    0.4242     0.474    0.4588    0.4734    0.5082
+
+                 li:        75   66.7656   70.4845   72.6975   75.6524   72.3873   72.4468
+        accel value:         1         9        11         7         1         8         5
+         size value:         1        12         7         6         1         9         6
+      stamina value:         7         9         5         3         5         6         7
+stamina_inc_max/li value:       0.6  0.546988  0.383631  0.402765  0.540895  0.406701  0.562619
+
+At cycle 0 we have bad, so try save stamina
+
+At cycle 1 we have bad, so try save stamina
+
+At cycle 2 we have bad, so try save stamina
+
+At cycle 3 we have bad, so try save stamina
+>> (change_player_type 2 2)
+
+>> (change_player_type 3 6)
+
+>> (change_player_type 4 6)
+
+>> (change_player_type 5 6)
+
+>> (change_player_type 6 5)
+
+>> (change_player_type 7 5)
+
+>> (change_player_type 8 5)
+
+>> (change_player_type 9 1)
+
+>> (change_player_type 10 1)
+
+>> (change_player_type 11 1)
+
+All very bad. Midfieders VARY BAD.

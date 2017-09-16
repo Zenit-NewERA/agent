@@ -1,0 +1,244 @@
+#--Scenarios--
+#This file contains scenarios for agent ERA-Polytech
+Scenario: "Open_wing_midfielder_right" 0.99
+Init_teammates: FastestTm=1 #with ball
+		(Midfielder,WingWB)=2
+Init_scenario: 	(bpos (rectangle Vector(35.0,11.0) Vector(52.0,34.0)))
+
+Steps: 
+      "GoDribble"#first step is always begin scenario
+   Ball_owner: 
+		      (ballto Vector(777.0,777.0) {dribble})
+   No_ball: 
+		      2: (pos Vector(34.0,20.0))
+   Leave_conditions: if (our {2} 1 1 (circle Vector(34.0,20.0) 5.0)) goto "MakeKickIfStop"
+	 									 if (bowner 2) goto end		
+			"MakeKickIfStop"
+		Ball_owner:
+				(ballto Vector(777.0,777.0) {dribble}) (ballto Vector(34.0,20.0) {clear})  	
+		No_ball:
+				  2: (pos Vector(34.0,20.0))
+		Leave_conditions: if(our {1} 1 1 (rectangle Vector (44.0,0.0) Vector (50.0, 10.0))) goto end
+										if (bowner 2) goto end
+#------------------------------------------------------
+Scenario: "Open_wing_midfielder_left" 0.99
+Init_teammates: FastestTm=1 #with ball
+	        (Midfielder,WingWB)=2
+Init_scenario: 	(bpos (rectangle Vector(35.0,-34.0) Vector(52.0,-11.0)))
+
+Steps: 
+      "GoDribble"#first step is always begin scenario
+   Ball_owner: 
+		      (ballto Vector(777.0,777.0) {dribble})
+   No_ball: 
+		      2: (pos Vector(34.0,-20.0))
+   Leave_conditions: if (our {2} 1 1 (circle Vector(34.0,-20.0) 5.0)) goto "MakeKickIfStop"
+	                   if (bowner 2) goto end
+			"MakeKickIfStop"
+		Ball_owner:
+				(ballto Vector(777.0,777.0) {dribble}) (ballto Vector(34.0,-20.0) {clear})  	
+		No_ball:
+				  2: (pos Vector(34.0,-20.0))
+		Leave_conditions:if(our {1} 1 1 (rectangle Vector (44.0,-10.0) Vector (50.0, 0.0))) goto end 
+										if( bowner 2) goto end
+#------------------------------------------------------
+Scenario: "Open_center_midfielder_right" 0.99
+Init_teammates: FastestTm (Midfielder, WingWB)=1 #with ball
+		            (Midfielder,Center)=2
+Init_scenario: 	(bpos (rectangle Vector(34.0,11.0) Vector(52.0,25.0)))
+
+Steps: 
+      "GoDribble"#first step is always begin scenario
+   Ball_owner: 
+		      (ballto Vector(777.0,777.0) {dribble})
+   No_ball: 
+		      2: (pos Vector(38.0,1.0))
+   Leave_conditions: if (our {2} 1 1 (circle Vector(38.0,1.0) 5.0)) goto "MakeKickIfStop"
+	                   if (bowner 2) goto end
+			"MakeKickIfStop"
+		Ball_owner:
+				(ballto Vector(777.0,777.0) {dribble}) (ballto Vector(38.0,1.0) {clear})  	
+		No_ball:
+				  2: (pos Vector(38.0,1.0))
+		Leave_conditions: if(our {1} 1 1 (rectangle Vector (44.0,0.0) Vector (50.0, 10.0))) goto end
+					if (bowner 2) goto end
+#------------------------------------------------------
+Scenario: "Open_center_midfielder_left" 0.99
+Init_teammates: FastestTm (Midfielder, WingWB)=1 #with ball
+		            (Midfielder,Center)=2
+Init_scenario: 	(bpos (rectangle Vector(34.0,-25.0) Vector(52.0,-11.0)))
+
+Steps: 
+      "GoDribble"#first step is always begin scenario
+   Ball_owner: 
+		      (ballto Vector(777.0,777.0) {dribble})
+   No_ball: 
+		      2: (pos Vector(38.0,-1.0))
+   Leave_conditions: if (our {2} 1 1 (circle Vector(38.0,-1.0) 5.0)) goto "MakeKickIfStop"
+	                   if (bowner 2) goto end
+			"MakeKickIfStop"
+		Ball_owner:
+				(ballto Vector(777.0,777.0) {dribble}) (ballto Vector(38.0,-1.0) {clear})  	
+		No_ball:
+				  2: (pos Vector(38.0,-1.0))
+		Leave_conditions: if(our {1} 1 1 (rectangle Vector (44.0,-10.0) Vector (50.0, 0.0))) goto end 
+						if (bowner 2) goto end
+#------------------------------------------------------
+Scenario: "Center_midfielder_go_forward_right" 0.99
+Init_teammates: FastestTm (Midfielder, Center)=1 #with ball
+		            (Midfielder,WingNB)=2
+Init_scenario: 	(bpos (rectangle Vector(30.0,0.0) Vector(45.0,11.0)))
+
+Steps: 
+      "GoDribble"#first step is always begin scenario
+   Ball_owner: 
+		      (ballto Vector(777.0,777.0) {dribble})
+   No_ball: 
+		      2: (pos Vector(ball_x,-7.0))
+   Leave_conditions: if (our {2} 1 1 (circle Vector(ball_x,-7.0) 5.0)) goto "MakeKickIfStop"
+	                   if (bowner 2) goto end
+			"MakeKickIfStop"
+		Ball_owner:
+				(ballto Vector(777.0,777.0) {dribble}) (ballto Vector(ball_x,-7.0) {clear})  	
+		No_ball:
+				  2: (pos Vector(ball_x,-7.0))
+		Leave_conditions: if(our {1} 1 1 (rectangle Vector (30.0,-20.0) Vector (50.0, -2.0))) goto end
+				if (bowner 2) goto end
+#------------------------------------------------------
+Scenario: "Center_midfielder_go_forward_left" 0.99
+Init_teammates: FastestTm (Midfielder, Center)=1 #with ball
+		            (Midfielder,WingNB)=2
+Init_scenario: 	(bpos (rectangle Vector(30.0,-11.0) Vector(45.0,0.0)))
+
+Steps: 
+      "GoDribble"#first step is always begin scenario
+   Ball_owner: 
+		      (ballto Vector(777.0,777.0) {dribble})
+   No_ball: 
+		      2: (pos Vector(ball_x,7.0))
+   Leave_conditions: if (our {2} 1 1 (circle Vector(ball_x,7.0) 5.0)) goto "MakeKickIfStop"
+	                   if (bowner 2) goto end
+			"MakeKickIfStop"
+		Ball_owner:
+				(ballto Vector(777.0,777.0) {dribble}) (ballto Vector(ball_x,7.0) {clear})  	
+		No_ball:
+				  2: (pos Vector(ball_x,7.0))
+		Leave_conditions: if(our {1} 1 1 (rectangle Vector (30.0,2.0) Vector (50.0, 20.0))) goto end
+			if (bowner 2) goto end
+#------------------------------------------------------
+
+
+
+#Scenario: "Center_goal_right" 0.99		#ball on right sight
+#Init_teammates: (circle Vector(ball) 5.0) =1 #with ball
+#								(rectangle Vector(35.0,-20.0) Vector(52.0,0.0))=2		
+#Init_scenario: (and (bpos (rectangle Vector(35.0,0.0) Vector(52.0,20.0)))
+#									  (opp {All} 0 0 (circle Vector(44.0,-2.0) 2.0))
+#								)
+#Steps: 
+#	"GoToConer"#first step is always begin scenario
+#    Ball_owner: 
+#			(ballto Vector(48.0,8.0) {score hold})
+#    No_ball: 
+#			2: (pos Vector(44.0,-2.0))
+#    Leave_conditions: if (our {2} 1 1 (circle Vector(44.0,-2.0) 3.0)) goto "PassToTm"
+#	"PassToTm"
+#		Ball_owner:
+#			(ballto Vector(44.0, -2.0) {score clear})
+#		No_ball:
+#			2: (pos Vector(44.0,-2.0))
+#		Leave_conditions: if (bowner 2) goto "KickToGoal"
+#	"KickToGoal"
+#		Ball_owner:
+#			(ballto Vector(52.5,-6.0) {score clear})
+#		No_ball:
+#			1: none
+##----------------------------------------------------------------------------------------
+#Scenario: "Center_goal_left" 0.99		#ball on left sight
+#Init_teammates: (circle Vector(ball) 5.0) =1 #with ball
+#								(rectangle Vector(35.0,0.0) Vector(52.0,20.0))=2		
+#Init_scenario: (and (bpos (rectangle Vector(35.0,-20.0) Vector(52.0,0.0)))
+#										(opp {All} 0 0 (circle Vector(44.0,-2.0) 2.0))
+#								)
+#Steps: 
+#	"GoToConer"#first step is always begin scenario
+#    Ball_owner: 
+#			(ballto Vector(48.0,-8.0) {score hold})
+#    No_ball: 
+#			2: (pos Vector(44.0,2.0))
+#    Leave_conditions: if (our {2} 1 1 (circle Vector(44.0,2.0) 3.0)) goto "PassToTm"
+#	"PassToTm"
+#		Ball_owner:
+#			(ballto Vector(44.0, 2.0) {score clear})
+#		No_ball:
+#			2: (pos Vector(44.0,2.0))
+#		Leave_conditions: if (bowner 2) goto "KickToGoal"
+#	"KickToGoal"
+#		Ball_owner:
+#			(ballto Vector(52.5,6.0) {score clear})
+#		No_ball:
+#			1: none
+##----------------------------------------------------------------------------------------
+#Scenario: "Parallel_lines_right" 1.0 #right sight
+#Init_teammates: (circle Vector(ball) 5.0) =1 #with ball
+#								(rectangle Vector(30.0,-20.0) Vector(45.0,0.0))=2
+#Init_scenario:  (and (bpos (rectangle Vector(30.0,0.0) Vector(52.0,20.0)))
+#									   (opp {All} 0 0 (circle Vector(45.0,-7.0) 3.0))
+#								)
+#Steps:
+#	"FirstLineGo"
+#		Ball_owner:
+#			(ballto Vector(45.0,10.0) {score dribble}) (ballto Vector(our,2) {clear})
+#		No_ball:
+#			2: (pos Vector(40.0,-7.0))
+#		Leave_conditions: if (bpos (rectangle Vector(43.0,-20.0) Vector(52.5,20.0))) goto "SecondLineGo"
+#											if (bowner 2) goto "FinalKICK"
+#  "SecondLineGo"
+#		Ball_owner:
+#			(ballto Vector(45.0,10.0) {score hold})
+#		No_ball:
+#			2: (pos Vector(-1.0,0.0 Vector(ball_x,-7.0)))
+#		Leave_conditions: if(our {2} 1 1 (circle Vector(ball_x,-7.0) 4.0)) goto "Cross"
+#	"Cross"
+#		Ball_owner:
+#			(ballto Vector(ball_x,-7.0) {score clear})
+#		No_ball:
+#			2: (pos Vector(-1.0,0.0 Vector(ball_x,-7.0)))
+#		Leave_conditions: if(bowner 2) goto "FinalKICK"
+#	"FinalKICK"
+#		Ball_owner:
+#			(ballto Vector(52.5,6.5) {score clear})
+#		No_ball:
+#			1: none
+##---------------------------------------------------------------------------------------------------
+#Scenario: "Parallel_lines_left" 1.0 #left sight
+#Init_teammates: (circle Vector(ball) 5.0) =1 #with ball
+#								(rectangle Vector(30.0,0.0) Vector(45.0,20.0))=2
+#Init_scenario:  (and (bpos (rectangle Vector(30.0,-20.0) Vector(52.0,0.0)))
+#									   (opp {All} 0 0 (circle Vector(45.0,7.0) 3.0))
+#								)
+#Steps:
+#	"FirstLineGo"
+#		Ball_owner:
+#			(ballto Vector(45.0,-10.0) {score dribble}) (ballto Vector(our,2) {clear})
+#		No_ball:
+#			2: (pos Vector(40.0,7.0))
+#		Leave_conditions: if (bpos (rectangle Vector(43.0,-20.0) Vector(52.5,20.0))) goto "SecondLineGo"
+#											if (bowner 2) goto "FinalKICK"
+#  "SecondLineGo"
+#		Ball_owner:
+#			(ballto Vector(45.0,-10.0) {score hold})
+#		No_ball:
+#			2: (pos Vector(-1.0,0.0 Vector(ball_x,7.0)))
+#		Leave_conditions: if(our {2} 1 1 (circle Vector(ball_x,7.0) 4.0)) goto "Cross"
+#	"Cross"
+#		Ball_owner:
+#			(ballto Vector(ball_x,7.0) {score clear})
+#		No_ball:
+#			2: (pos Vector(-1.0,0.0 Vector(ball_x,7.0)))
+#		Leave_conditions: if(bowner 2) goto "FinalKICK"
+#	"FinalKICK"
+#		Ball_owner:
+#			(ballto Vector(52.5,-6.5) {score clear})
+#		No_ball:
+#			1: none

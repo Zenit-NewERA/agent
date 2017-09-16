@@ -1,0 +1,46 @@
+Opponent HELIOS2003 is NOT strong
+              Types:         0         1         2         3         4         5         6
+    player_speed_max       1.2       1.2       1.2       1.2       1.2       1.2       1.2
+     stamina_inc_max        45     35.36     29.76     36.78     41.42     42.14      30.4
+        player_decay       0.4    0.5728    0.4432    0.4018    0.4036    0.4202    0.4126
+      inertia_moment         5      9.32      6.08     5.045      5.09     5.505     5.315
+     dash_power_rate     0.006  0.006964  0.007524  0.006822  0.006358  0.006286   0.00746
+         player_size       0.3       0.3       0.3       0.3       0.3       0.3       0.3
+     kickable_margin       0.7    0.7376    0.7308    0.7212    0.7774    0.8336    0.7386
+           kick_rand         0    0.0188    0.0154    0.0106    0.0387    0.0668    0.0193
+       extra_stamina         0      16.9      27.6      28.6      39.3         3      72.9
+          effort_max         1    0.9662    0.9448    0.9428    0.9214     0.994    0.8542
+          effort_min       0.6    0.5662    0.5448    0.5428    0.5214     0.594    0.4542
+
+                 li:        75    40.828   64.2322   74.8283   80.7459   69.2122   80.2157
+        accel value:         2        10        11         6         2         5         6
+         size value:         2         9         7         4         5        10         5
+      stamina value:         8         8         5         6         4         9         2
+stamina_inc_max/li value:       0.6  0.866072  0.463319  0.491526  0.512967  0.608852  0.378978
+
+At cycle 0 we have bad, so try save stamina
+
+At cycle 2 we have bad, so try save stamina
+
+At cycle 3 we have bad, so try save stamina
+>> (change_player_type 2 2)
+
+>> (change_player_type 3 3)
+
+>> (change_player_type 4 3)
+
+>> (change_player_type 5 3)
+
+>> (change_player_type 6 1)
+
+>> (change_player_type 7 1)
+
+>> (change_player_type 8 1)
+
+>> (change_player_type 9 5)
+
+>> (change_player_type 10 5)
+
+>> (change_player_type 11 5)
+
+All seems ok. Midfielders BETTER then forwards. 
